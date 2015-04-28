@@ -4,7 +4,7 @@ import java.util.Date;
 
 import com.adms.common.domain.BaseDomain;
 
-public class UserSession extends BaseDomain {
+public class UserLogin extends BaseDomain {
 
 	/**
 	 * 
@@ -17,15 +17,15 @@ public class UserSession extends BaseDomain {
 	private Date userLoginDate;
 	private Boolean loginSuccess = false;
 	
-	public UserSession() {
+	public UserLogin() {
 		
 	}
 	
-	public UserSession(String user) {
+	public UserLogin(String user) {
 		this.user = user;
 	}
 	
-	public UserSession(String user, String userPassword) {
+	public UserLogin(String user, String userPassword) {
 		this.user = user;
 		this.userPassword = userPassword;
 	}
